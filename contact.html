@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form Submission</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+    </header>
+
+    <div class="container">
+        <h1 id="thankYouMessage">Thank you for your message!</h1>
+
+        <p>We will get back to you via the provided email or mobile number.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var fullName = urlParams.get("name");
+
+            if (fullName) {
+                var thankYouMessage = document.getElementById("thankYouMessage");
+                thankYouMessage.textContent = "Thank you, " + fullName + ", for your message!";
+            }
+        });
+    </script>
+</body>
+</html>

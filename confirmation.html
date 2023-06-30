@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation Page</title>
+  <link rel = "icon" href = "logo.png" type = "image/x-icon">
+  <link rel="stylesheet" href="confirmation.css">
+</head>
+
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1 class="title">Booking Confirmation</h1>
+    <div id="booking-details">
+      <p class="name-label">Name:</p>
+      <p class="name-value" id="name"></p>
+
+      <p class="admission-label">Admission/KCSE Number:</p>
+      <p class="admission-value" id="admission-number"></p>
+
+      <p class="hostel-label">Hostel:</p>
+      <p class="hostel-value" id="hostel"></p>
+
+      <p class="message">Thank you for booking a hostel. Please wait for the school to verify your booking. A confirmation message will be sent to you soon.</p>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Retrieve query parameters from the URL
+      const params = new URLSearchParams(window.location.search);
+
+      // Get the form data from the query parameters
+      const name = params.get("name");
+      const admissionNumber = params.get("admission");
+      const hostel = params.get("hostel");
+
+      // Display the form data on the confirmation page
+      const nameElement = document.getElementById("name");
+      const admissionNumberElement = document.getElementById("admission-number");
+      const hostelElement = document.getElementById("hostel");
+
+      nameElement.textContent = name;
+      admissionNumberElement.textContent = admissionNumber;
+      hostelElement.textContent = hostel;
+    });
+  </script>
+</body>
+</html>

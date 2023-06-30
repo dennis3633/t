@@ -1,0 +1,341 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eaeaea;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .details-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .details-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .details-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  
+  .details-list li {
+    margin-bottom: 10px;
+  }
+  
+  .details-list li strong {
+    font-weight: bold;
+  }
+  
+  .details-message {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .button-wrapper {
+    text-align: center;
+  }
+  
+  .proceed-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .proceed-button:hover {
+    background-color: #0056b3;
+  }
+  /* Existing CSS code */
+
+.rotating-image {
+    text-align: center;
+    margin-top: 30px;
+    animation: rotate-border 4s linear infinite;
+  }
+  
+  .rotating-image img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+  }
+  
+  @keyframes rotate-border {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /* Existing CSS code */
+
+.welcome-message {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    animation: move-message 10s linear infinite;
+  }
+  
+  @keyframes move-message {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .details-wrapper {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details-card {
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .details-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .details-list li {
+    margin-bottom: 5px;
+  }
+  
+  .details-message {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .button-wrapper {
+    text-align: center;
+  }
+  
+  .proceed-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .proceed-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .rotating-image {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .rotating-image img {
+    width: 100px;
+    height: 100px;
+    animation: rotate 10s infinite linear;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .welcome-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    animation: slide 10s linear infinite alternate;
+    text-transform: uppercase;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .title {
+      font-size: 20px;
+    }
+    .details-card {
+      padding: 10px;
+    }
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .details-message {
+      font-size: 12px;
+    }
+    .proceed-button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+    .rotating-image img {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .welcome-message {
+        font-size: 12px;
+        padding: 8px;
+        animation: slide 14s linear infinite alternate;
+      }
+    }
+    .back-button {
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      .back-button a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .back-button a:hover {
+        background-color: #0056b3;
+      }
+      .instruction-message {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        text-align: center;
+      }
+      
+      .instruction-message p {
+        margin-bottom: 10px;
+      }
+      
+      .instruction-message ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+      
+      .instruction-message li {
+        margin-bottom: 5px;
+      }
+      
+      .instruction-message li strong {
+        font-weight: bold;
+      }
+      
+      .instruction-message p.error-message {
+        color: #ff0000;
+      }
+      
+      

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seku University Hostel Portal - Sign in to book a hostel">
+  <meta name="author" content="Your Name">
+  <title>Seku University | Hostel Portal</title>
+  <link rel="icon" href="assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+  <div class="portal">
+    <div class="portal__wrapper">
+      <form action="details.html" class="portal__wrapper__form" method="GET">
+        <div class="portal__wrapper__form__wrapper">
+          <div class="portal__wrapper__form__wrapper__title">
+            <h1><span>Seku Hostel</span> Portal</h1>
+            <p>Sign in to book a hostel</p>
+          </div>
+          <div class="portal__wrapper__form__wrapper__field">
+            <div class="portal__wrapper__form__wrapper__field__input">
+              <input type="text" name="loginName" id="studno" class="js-input">
+              <label for="studno">Student Name</label>
+            </div>
+            <div class="portal__wrapper__form__wrapper__field__input">
+              <input type="password" name="admissionNumber" id="acode" class="js-input js-pass">
+              <label for="acode">Admission number</label>
+              <img id="show-hide-pass" src="assets/showPass.svg" alt="">
+              <a href="#" id="forgot-pass">You can use your KCSE index number!</a>
+            </div>
+            <div class="portal__wrapper__form__wrapper__field__input">
+              <input type="text" id="captcha" class="js-input">
+              <label for="captcha">Validation code</label>
+              <img id="captcha-img" src="assets/captcha.jpg" alt="">
+            </div>
+            <div class="portal__wrapper__form__wrapper__field__button">
+              <button type="submit">Sign in</button>
+            </div>
+            <p id="terms">By using this service, you understand and agree to the Seku University Hostel services <a href="#">Terms of Use</a> and <a href="#">Privacy Statement</a>.</p>
+          </div>
+        </div>
+      </form>
+      <div class="portal__wrapper__hero">
+        <img src="logo.png" alt="Seku University Hostel Portal Logo">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
